@@ -4,7 +4,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: {{ $appset.name }}-appset
+  name: appset-{{ $appset.name }}
   namespace: argocd
 spec:
   goTemplate: true
